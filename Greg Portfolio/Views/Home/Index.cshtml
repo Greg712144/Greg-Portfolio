@@ -1,0 +1,985 @@
+﻿@{
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    @* Favicon goes here *@
+    <link rel="icon" href="~/img/RedApple.png" type="image/x-icon" />
+
+    <title>Welcome To My Portfolio!</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="~/Content/stylish-portfolio.css" rel="stylesheet" />
+
+
+    <!-- Custom Fonts -->
+
+    <link href="~/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <style>
+        .Fizz { 
+            color :red;
+        }
+
+        .Buzz{
+            color : blue;
+        }
+
+        .FizzBuzz {
+            color:purple;
+        }
+
+
+        .ImageBorder {
+            border-width: 1px;
+            border-color: Black;
+        }
+
+
+    </style>
+    
+
+
+    @*Here is the required CSS reference for using SyntaxHighlighter*@
+
+    <link href="~/Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
+    <link href="~/Scripts/SyntaxHighlighter/styles/shThemeDjango.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#" onclick=$("#menu-close").click();>Menu</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1><font color="Black">Greg Zambrana</font></h1>
+            <br/>
+            <br />
+            <h2><font color="Black">Software Developer</font></h2>
+            <br>
+            @*<a href="#about" class="btn btn-dark btn-lg">Resume</a>*@
+        </div>
+    </header>
+    <!-- About -->
+    @*<section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About Me!</h2>
+                    <p class="lead">
+                        My name is Greg Zambrana. I started my career in the construction field becoming a jack of all trades.
+                        <br />
+                        I even had some time to squeeze in some software developing skills on top of that. Anything you need, I can be a great help to you! 
+
+                        <a target="_blank" href="http://join.deathtothestockphoto.com/"></a>
+                    </p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>*@
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+   
+    <!-- Callout -->
+    <a id="about" class="about"></a>
+        <aside class="callout">
+            <div class="text-vertical-center">
+                <h2>About Me!</h2>
+                <p class="lead">
+                    <h3>Hello Everyone! My name is Greg Zambrana and here is just a tid-bit about myself. I started out my career working in</h3>
+
+                    <h3>the construction field having time here and there to learn about IT. I've always liked working with computers but it</h3>
+
+                    <h3>wasn't until I had the opportunity to learn about Software Development at Coder Foundry that I realized what I wanted</h3>
+
+                    <h3>to do for a living. Thanks to Coder Foundry I now have the skills to pursue a new career as a Software Developer!</h3>
+
+                </p>
+            </div>
+        </aside>
+    
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>My Portfolio</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="myModal" data-toggle="modal" data-target="#myModal" class="porfolio-item">
+                                    <img class="img-portfolio img-responsive img-rounded" src="~/img/Javascript New- Portfolio.jpg" />
+                                </a>
+                                <!-- Modal -->
+                                <div id="myModal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h2 class="modal-title"><b>JS/jQuery Exercises!</b></h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <ul class="nav nav-pills">
+                                                    <li class="active"><a data-toggle="pill" href="#math">Math</a></li>
+                                                    <li><a data-toggle="pill" href="#pal">Palindrome</a></li>
+                                                    <li><a data-toggle="pill" href="#fizzy">Fizz-Buzz</a></li>
+                                                    <li><a data-toggle="pill" href="#fact">Factorial</a></li>
+                                                </ul>
+
+                                                <div class="tab-content">
+                                                    <div id="math" class="tab-pane fade in active">
+                                                        <br />
+                                                        <p><b> For those who want to know the sum, the product, the average, the largest and the smallest number from a set of five numbers!</b></p>
+                                                        <hr />
+                                                        <div class="container-fluid">
+                                                            <div class="col-md-3">
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <b>Enter Number 1:</b><input id="n1" type="number" />
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <b>Enter Number 2:</b> <input id="n2" type="number" />
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <b>Enter Number 3:</b> <input id="n3" type="number" />
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <b>Enter Number 4:</b> <input id="n4" type="number" />
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <b>Enter Number 5:</b> <input id="n5" type="number" />
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <button id="btnSub1" type="button" class=" btn btn-sm btn-primary">Submit</button>
+                                                                    <button id="btnClear1" type="button" class="btn btn-sm btn-warning">Clear</button>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <button id="btnCode" class="btn btn-success">Show_Hide</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-9">
+                                                                <div class=" row">
+                                                                    <div class=" col-md-offset-3 text-center">
+                                                                        <span id="resultHdr"><b>Here are your results!</b></span>
+                                                                        <br />
+                                                                        <br />
+                                                                        <p id="sum"></p>
+                                                                        <p id="product"></p>
+                                                                        <p id="average"></p>
+                                                                        <p id="largest"></p>
+                                                                        <p id="smallest"></p>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div id="Mcode">
+
+                                                                        <pre class="brush:js">
+
+                                                                            $("#btnSub1").click(function () {
+                                                                                        $("#resultHdr").show();
+
+                                                                                        //How do I use jQuery to get the value inside the input with var id=n1?//
+                                                                                        var n1 = Number($("#n1").val());
+                                                                                        var n2 = +$("#n2").val();
+                                                                                        var n3 = +$("#n3").val();
+                                                                                        var n4 = +$("#n4").val();
+                                                                                        var n5 = +$("#n5").val();
+
+
+                                                                                        //Calculate Sum
+                                                                                        var sum = n1 + n2 + n3 + n4 + n5;
+                                                                                        //Calculate Product
+                                                                                        var product = n1 * n2 * n3 * n4 * n5;
+                                                                                        //Calculate Average
+                                                                                        var average = sum / 5
+                                                                                        //Calculate Largest
+                                                                                        var max = Math.max(n1, n2, n3, n4, n5)
+                                                                                        //Calculate Smallest
+                                                                                        var min = Math.min(n1, n2, n3, n4, n5)
+
+                                                                                        //Output the results to user
+                                                                                        $("#sum").text("The sum of your numbers: " + sum)
+                                                                                        $("#product").text("The product of your numbers: " + product)
+                                                                                        $("#average").text("The average of your numbers: " + average)
+                                                                                        $("#largest").text("The largest of your numbers: " + max)
+                                                                                        $("#smallest").text("The smallest of your numbers: " + min)
+
+                                                                                    });
+
+
+                                                                        </pre>
+                                                                        
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="pal" class="tab-pane fade">
+                                                        <br />
+                                                        <p><b> Ever wondered if a word is spelled the same forward and backward? That's called a Palindrome! Try it out!</b></p>
+                                                        <hr />
+                                                        <div class="container-fluid">
+                                                            <div class="col-md-3">
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <b>Enter Word :</b> <input id="p1" type="text" />
+
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <button id="btnSub2" class=" btn btn-sm btn-primary">Submit</button>
+                                                                    <button id="btnClear2" type="button" class="btn btn-sm btn-warning">Clear</button>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <button id="btnCode2" button type="button" class="btn btn-success">Show_Hide</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-9">
+                                                                <div class=" row">
+                                                                    <div class=" col-md-offset-3 text-center">
+                                                                        <span id="resultPali"><b>Here are your results!</b></span>
+                                                                        <br />
+                                                                        <br />
+                                                                        <p id="palD"></p>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div id="McodeP">
+                                                                        <pre class="brush:js">
+
+                                                                                $("#btnSub2").click(function () {
+                                                                                            $("#resultPali").show();
+
+                                                                                            var p = $("#p1").val(); 
+
+                                                                                            function palindrome(str) {
+                                                                                                var re = /[\W_]/g;
+                                                                                                var lowRegStr = str.toLowerCase().replace(re, '');
+                                                                                                var reverseStr = lowRegStr.split('').reverse().join('');
+                                                                                                return reverseStr === lowRegStr;
+                                                                                            }
+
+
+                                                                                            if (palindrome(p) == true) {
+                                                                                                $("#palD").text("This word is a Palindrome")
+                                                                                            }
+
+                                                                                            else {
+                                                                                                $("#palD").text("This word is Not a Palindrome")
+
+                                                                                            }
+                                                                                        });
+                                                                        </pre>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="fizzy" class="tab-pane fade">
+                                                        <br />
+                                                        <p><b>Fizz-Buzz is a programming exercise that determines the multiples of the numbers you enter below. If your first number divides evenly into a number from 1 to 100 it will produce "Fizz", if the second number divides evenly it will produce "Buzz" and if both numbers divide evenly it will produce "FizzBuzz".</b></p>
+                                                        <hr />
+                                                        <div class="container-fluid">
+                                                            <div class="col-md-3">
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <b>Enter Number :</b> <input id="n6" type="number" />
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <b>Enter Number :</b> <input id="n7" type="number" />
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <button id="btnSub3" class=" btn btn-sm btn-primary">Submit</button>
+                                                                    <button id="btnClear3" type="button" class="btn btn-sm btn-warning">Clear</button>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <button id="btnCode3" button type="button" class="btn btn-success">Show_Hide</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-9">
+                                                                <div class=" row">
+                                                                    <div class=" col-md-offset-3 text-center">
+                                                                        <span id="resultFizz"><b>Here are your results!</b></span>
+                                                                        <br />
+                                                                        <br />
+                                                                        <p id="fizB"></p>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div id="McodeFb">
+                                                                        <pre class="brush:js">
+                                                                             $("#btnSub3").click(function () {
+                                                                                        $("#resultFizz").show();
+
+                                                                                        //Get User Data
+                                                                                        var num1 = parseInt($("#n6").val());
+                                                                                        var num2 = parseInt($("#n7").val());
+                                                                                        var myOutput = "";
+
+                                                                                        //Write Loop from 1 to 100
+
+                                                                                        for (var i = 1; i <= 100; i++) {
+                                                                                            //Record Modulus
+                                                                                            var Fizz = i % num1;
+                                                                                            var Buzz = i % num2;
+                
+
+
+                                                                                            //Check Fizzy
+                                                                                            if (((i % num1) == 0) && ((i % num2) == 0)) {
+                                                                                                myOutput += "<span class='FizzBuzz'>FizzBuzz. </span>";
+
+                                                                                            }
+
+                                                                                            else if (Fizz == 0) {
+                                                                                                myOutput += "<span class='Fizz'>Fizz. </span>";
+
+                                                                                            }
+
+                                                                                            else if (Buzz == 0) {
+                                                                                                myOutput += "<span class='Buzz'>Buzz. </span>";
+
+                                                                                            }
+
+                                                                                            else {
+                                                                                                var num = i.toString();
+                                                                                                myOutput += num + ". ";
+                                                                                                 }
+
+                                                                                            
+                    
+                
+               
+                                                                                        }
+           
+
+                                                                                        myOutput = myOutput.substring(0, myOutput.length - 2);
+
+                                                                                        $("#fizB").html(myOutput);
+            
+
+                                                                                    });
+
+                                                                        </pre>
+
+                                                                    </div>
+
+
+                                                                </div>
+
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="fact" class="tab-pane fade">
+                                                        <br />
+                                                        <p><b> Calculates the Factorial of numbers from 1 to 170.</b></p>
+                                                        <hr />
+                                                        <div class="container-fluid">
+                                                            <div class="col-md-3">
+                                                                <div class="row">
+                                                                    <b>Enter Number :</b> <input id="n8" type="number" />
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <button id="btnSub4" type="button" class=" btn btn-sm btn-primary">Click Me</button>
+                                                                    <button id="btnClear4" type="button" class="btn btn-sm btn-warning">Clear</button>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <br />
+                                                                    <button id="btnCode4" button type="button" class="btn btn-success">Show_Hide</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-9">
+                                                                <div class=" row">
+                                                                    <div class=" col-md-offset-3 text-center">
+                                                                        <span id="resultFact"><b>Here are your results!</b></span>
+                                                                        <br />
+                                                                        <br />
+                                                                        <p id="fain"></p>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div id="McodeF">
+                                                                        <pre class="brush:js">
+
+                                                                             $("#btnSub4").click(function () {
+                                                                                        $("#resultFact").show();
+
+
+                                                                                        //Get User Data
+
+                                                                                        var fain = +$("#n8").val();
+
+            
+
+                                                                                        //Calculate Factorial
+                                                                                        for (i = (fain-1); i > 1; i--) {
+                                                                                            fain = fain * i;
+
+
+                                                                                        };
+
+                                                                                        //Output Results
+
+
+                                                                                        $("#fain").text("The Factorial of " + $("#n8").val() + " is " + fain)
+
+                                                                                    });
+
+                                                                        </pre>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="modal-footer">
+
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="myModal2" data-toggle="modal" data-target="#myModal2" class="porfolio-item">
+                                    <img class="img-portfolio img-responsive img-rounded" src="~/img/BlogPost New-Portfolio.png" />
+                                </a>
+                                <div id="myModal2" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h2 class="modal-title"><b>Blog Post!</b></h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><b>Here I have another completed project known as my Blog Post where I speak about myself but also about other projects and lessons I've learned in the process of becoming a Software Developer. You're more than welcome to check it out and leave a comment (must register to leave a comment).</b></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="https://zamblog.azurewebsites.net/" target="_blank" class= "btn btn-primary">Go to Blog Post..</a>
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="myModal3" data-toggle="modal" data-target="#myModal3" class="portfolio-item">
+                                    <img class="img-portfolio img-responsive img-rounded" src="~/img/BugTracker New-Portfolio.jpg" />
+                                </a>
+                                <div id="myModal3" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h2 class="modal-title"><b>Bug Tracker!</b></h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><b>Project is still under construction., but can be temporarily viewed.</b></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="https://bugtrackerz.azurewebsites.net/" target="_blank" class="btn btn-primary">Go to Bug Tracker..</a>
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="myModal4" data-toggle="modal" data-target="#myModal4" class="portfolio-item">
+                                    <img class="img-portfolio img-responsive img-thumbnail" src="~/img/WebApi New-Portfolio.jpg" />   
+                                </a>
+                                 <div id="myModal4" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h2 class="modal-title"><b>Web API!</b></h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><b>Currently under construction..</b></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                @*<a href="https://zamblog.azurewebsites.net/" target="_blank" class= "btn btn-primary">Go to Blog Post..</a>*@
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+               
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- Call to Action -->
+    @*<aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>The buttons below are impossible to resist.</h3>
+                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                </div>
+            </div>
+        </div>
+    </aside>*@
+    <!-- Map -->
+    @*<section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe>
+    </section>*@
+    <!-- Footer -->
+    <footer>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h4>
+                            <strong>Greg Zambrana</strong>
+                        </h4>
+                        <p>
+                            North Carolina, USA
+
+                        </p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-phone fa-fw"></i> (704) 657-7253</li>
+                            <li>
+                                <i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:gzambrana93@outlook.com">gzambrana93@outlook.com</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://github.com/Greg712144" target="_blank"><i class="fa fa-github-square fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/gregorio-zambrana-5873a8152/" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-3x" ></i></a>
+                            </li>
+
+                        </ul>
+                        <hr class="small">
+                        <p class="text-muted">Greg Zambrana 2019 Copyright &copy;</p>
+                    </div>
+                </div>
+            </div>
+            <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+
+        </section>
+    </footer>
+    <!-- jQuery -->
+    <script src="~/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/js/bootstrap.min.js"></script>
+
+    @*Add required js reference for syntaxhighlighter*@
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+
+   
+
+    @* Aggregated jQuery exercises *@
+    <script>
+
+        //Simple Math
+
+        $("#resultHdr").hide();
+
+        $("#btnSub1").click(function () {
+            $("#resultHdr").show();
+
+            //How do I use jQuery to get the value inside the input with var id=n1?//
+            var n1 = Number($("#n1").val());
+            var n2 = +$("#n2").val();
+            var n3 = +$("#n3").val();
+            var n4 = +$("#n4").val();
+            var n5 = +$("#n5").val();
+
+
+            //Calculate Sum
+            var sum = n1 + n2 + n3 + n4 + n5;
+            //Calculate Product
+            var product = n1 * n2 * n3 * n4 * n5;
+            //Calculate Average
+            var average = sum / 5
+            //Calculate Largest
+            var max = Math.max(n1, n2, n3, n4, n5)
+            //Calculate Smallest
+            var min = Math.min(n1, n2, n3, n4, n5)
+
+            //Output the results to user
+            $("#sum").text("The sum of your numbers: " + sum)
+            $("#product").text("The product of your numbers: " + product)
+            $("#average").text("The average of your numbers: " + average)
+            $("#largest").text("The largest of your numbers: " + max)
+            $("#smallest").text("The smallest of your numbers: " + min)
+
+        });
+
+        //Palindrome
+
+        $("#resultPali").hide();
+
+        $("#btnSub2").click(function () {
+            $("#resultPali").show();
+
+            var p = $("#p1").val(); 
+
+            function palindrome(str) {
+                var re = /[\W_]/g;
+                var lowRegStr = str.toLowerCase().replace(re, '');
+                var reverseStr = lowRegStr.split('').reverse().join('');
+                return reverseStr === lowRegStr;
+            }
+
+
+            if (palindrome(p) == true) {
+                $("#palD").text("This word is a Palindrome")
+            }
+
+            else {
+                $("#palD").text("This word is Not a Palindrome")
+
+            }
+        });
+
+        //Fizz-Buzz
+
+        $("#resultFizz").hide();
+        $("#btnSub3").click(function () {
+            $("#resultFizz").show();
+
+            //Get User Data
+            var num1 = parseInt($("#n6").val());
+            var num2 = parseInt($("#n7").val());
+            var myOutput = "";
+
+            //Write Loop from 1 to 100
+
+            for (var i = 1; i <= 100; i++) {
+                //Record Modulus
+                var Fizz = i % num1;
+                var Buzz = i % num2;
+                
+
+
+                //Check Fizzy
+                if (((i % num1) == 0) && ((i % num2) == 0)) {
+                    myOutput += "<span class='FizzBuzz'>FizzBuzz. </span>";
+
+                }
+
+                else if (Fizz == 0) {
+                    myOutput += "<span class='Fizz'>Fizz. </span>";
+
+                }
+
+                else if (Buzz == 0) {
+                    myOutput += "<span class='Buzz'>Buzz. </span>";
+
+                }
+
+                else {
+                    var num = i.toString();
+                    myOutput += num + ". ";
+                     }
+
+                //console.log(myOutput)
+                    
+                
+               
+            }
+           
+
+            myOutput = myOutput.substring(0, myOutput.length, -2);
+
+            $("#fizB").html(myOutput);
+            
+
+        });
+
+        //Factorial
+       
+        $("#resultFact").hide();
+
+        $("#btnSub4").click(function () {
+            $("#resultFact").show();
+
+
+            //Get User Data
+
+            var fain = +$("#n8").val();
+
+            
+
+            //Calculate Factorial
+            for (i = (fain-1); i > 1; i--) {
+                fain = fain * i;
+
+
+            };
+
+            //Output Results
+
+
+            $("#fain").text("The Factorial of " + $("#n8").val() + " is " + fain)
+
+        });
+
+
+
+        //Function Handles
+        
+
+        $("#btnClear1, #btnClear2, #btnClear3, #btnClear4").click(function ()  {
+           
+            clearData();
+            
+
+        });
+
+       
+
+        $('a[data-toggle="pill"]').click(function () {
+
+            clearData();
+            
+        });
+       
+        
+
+        //Functions
+
+        function clearData() {
+           
+            $("#resultHdr").hide()
+            $("#resultFact").hide()
+            $("#resultFizz").hide()
+            $("#resultPali").hide()
+            $("#Mcode").hide();
+            $("#McodeP").hide();
+            $("#McodeFb").hide();
+            $("#McodeF").hide();
+            $("#n1, #n2, #n3, #n4, #n5, #n6, #n7, #n8, #p1").val("")
+            $("#sum, #product, #average, #largest, #smallest, #fain, #fizB, #palD").html("")
+           
+
+        };  
+
+    </script>
+        
+           
+    
+
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+        SyntaxHighlighter.all();
+
+        $("#Mcode").hide();
+        $("#btnCode").click(function () {
+            $("#Mcode").toggle();
+
+        });
+
+        $("#McodeP").hide();
+        $("#btnCode2").click(function () {
+            $("#McodeP").toggle();
+
+        });
+
+        $("#McodeFb").hide();
+        $("#btnCode3").click(function () {
+            $("#McodeFb").toggle();
+
+        });
+
+        $("#McodeF").hide();
+        $("#btnCode4").click(function () {
+            $("#McodeF").toggle();
+
+        });
+
+        // Closes the sidebar menu
+        $("#menu-close").click(function (e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        // Opens the sidebar menu
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        // Scrolls to the selected menu item on the page
+        $(function () {
+            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        //#to-top button appears after scrolling
+        var fixed = false;
+        $(document).scroll(function () {
+            if ($(this).scrollTop() > 250) {
+                if (!fixed) {
+                    fixed = true;
+                    // $('#to-top').css({position:'fixed', display:'block'});
+                    $('#to-top').show("slow", function () {
+                        $('#to-top').css({
+                            position: 'fixed',
+                            display: 'block'
+                        });
+                    });
+                }
+            } else {
+                if (fixed) {
+                    fixed = false;
+                    $('#to-top').hide("slow", function () {
+                        $('#to-top').css({
+                            display: 'none'
+                        });
+                    });
+                }
+            }
+        });
+        // Disable Google Maps scrolling
+        // See http://stackoverflow.com/a/25904582/1607849
+        // Disable scroll zooming and bind back the click event
+        var onMapMouseleaveHandler = function (event) {
+            var that = $(this);
+            that.on('click', onMapClickHandler);
+            that.off('mouseleave', onMapMouseleaveHandler);
+            that.find('iframe').css("pointer-events", "none");
+        }
+        var onMapClickHandler = function (event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+        $('.map').on('click', onMapClickHandler);
+    </script>
+</body>
+</html>

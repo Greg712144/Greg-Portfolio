@@ -154,6 +154,7 @@
     <Content Include="img\Blog Thumbnail Re.jpg" />
     <Content Include="img\Blog Thumbnail.jpg" />
     <Content Include="img\BlogPost New-Portfolio.png" />
+    <Content Include="img\bluehoney.jpg" />
     <Content Include="img\BugTracker New-Portfolio.jpg" />
     <Content Include="img\callout.jpg" />
     <Content Include="img\clients\client-1.png" />
@@ -162,6 +163,7 @@
     <Content Include="img\clients\client-4.png" />
     <Content Include="img\Div Pic.jpg" />
     <Content Include="img\favicon.png" />
+    <Content Include="img\financial planner pic.jpg" />
     <Content Include="img\footer-background-02-1.png" />
     <Content Include="img\Javascript New- Portfolio.jpg" />
     <Content Include="img\jQuery pic RE.jpg" />
@@ -174,6 +176,7 @@
     <Content Include="img\portfolio-4.jpg" />
     <Content Include="img\professional-desktop-wallpaper.jpg" />
     <Content Include="img\RedApple.png" />
+    <Content Include="img\sea-water-and-beach-background-header.jpg" />
     <Content Include="img\WebApi New-Portfolio.jpg" />
     <Content Include="img\work\item-1.jpg" />
     <Content Include="img\work\item-2.jpg" />
@@ -217,6 +220,7 @@
     <Content Include="font-awesome\scss\_rotated-flipped.scss" />
     <Content Include="font-awesome\scss\_stacked.scss" />
     <Content Include="font-awesome\scss\_variables.scss" />
+    <Content Include="img\Gregorio Zambrana Final Resume 2019.pdf" />
     <None Include="Properties\PublishProfiles\GregPortfolio - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

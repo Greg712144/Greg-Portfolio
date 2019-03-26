@@ -46,7 +46,10 @@
             border-width: 1px;
             border-color: Black;
         }
-
+        
+        .Error{
+            color:red;
+        }
 
     </style>
     
@@ -90,60 +93,62 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1><font color="Black">Greg Zambrana</font></h1>
-            <br/>
+            <h1><font color="White">Greg Zambrana</font></h1>
             <br />
-            <h2><font color="Black">Software Developer</font></h2>
+            <br />
+            <h2><font color="White">Software Developer</font></h2>
             <br>
-            @*<a href="#about" class="btn btn-dark btn-lg">Resume</a>*@
         </div>
     </header>
-    <!-- About -->
-    @*<section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Me!</h2>
-                    <p class="lead">
-                        My name is Greg Zambrana. I started my career in the construction field becoming a jack of all trades.
-                        <br />
-                        I even had some time to squeeze in some software developing skills on top of that. Anything you need, I can be a great help to you! 
-
-                        <a target="_blank" href="http://join.deathtothestockphoto.com/"></a>
-                    </p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>*@
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-   
-    <!-- Callout -->
+ <!-- Callout -->
     <a id="about" class="about"></a>
-        <aside class="callout">
-            <div class="text-vertical-center">
-                <h2>About Me!</h2>
-                <p class="lead">
-                    <h3>Hello Everyone! My name is Greg Zambrana and here is just a tid-bit about myself. I started out my career working in</h3>
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h2>About Me!</h2>
+            <p class="lead">
+                <h3>Hello Everyone! My name is Greg Zambrana and here is just a tid-bit about myself. I started out my career working in</h3>
 
-                    <h3>the construction field having time here and there to learn about IT. I've always liked working with computers but it</h3>
+                <h3>the construction field having time here and there to learn about IT. I've always liked working with computers but it</h3>
 
-                    <h3>wasn't until I had the opportunity to learn about Software Development at Coder Foundry that I realized what I wanted</h3>
+                <h3>wasn't until I had the opportunity to learn about Software Development at Coder Foundry that I realized what I wanted</h3>
 
-                    <h3>to do for a living. Thanks to Coder Foundry I now have the skills to pursue a new career as a Software Developer!</h3>
+                <h3>to do for a living. Thanks to Coder Foundry I now have the skills to pursue a new career as a Software Developer!</h3>
 
-                </p>
+            </p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myRes">
+                Resume
+            </button>
+        </div>
+
+
+        <!-- The Modal -->
+        <div class="modal" id="myRes">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+                        <embed src="~/img/Gregorio Zambrana Final Resume 2019.pdf" type="application/pdf" width="100%" height="800px" />
+
+                    </div>
+
+                </div>
+
             </div>
-        </aside>
-    
+
+        </div>
+    </aside>
+
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>My Portfolio</h2>
+                    <p>(Click one below)</p>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-6">
@@ -152,6 +157,7 @@
                                     <img class="img-portfolio img-responsive img-rounded" src="~/img/Javascript New- Portfolio.jpg" />
                                 </a>
                                 <!-- Modal -->
+
                                 <div id="myModal" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
 
@@ -212,11 +218,13 @@
                                                                         <span id="resultHdr"><b>Here are your results!</b></span>
                                                                         <br />
                                                                         <br />
+                                                                        <p id="error"></p>
                                                                         <p id="sum"></p>
                                                                         <p id="product"></p>
                                                                         <p id="average"></p>
                                                                         <p id="largest"></p>
                                                                         <p id="smallest"></p>
+
 
                                                                     </div>
                                                                 </div>
@@ -260,7 +268,7 @@
 
 
                                                                         </pre>
-                                                                        
+
                                                                     </div>
                                                                 </div>
 
@@ -330,7 +338,7 @@
                                                                         </pre>
                                                                     </div>
                                                                 </div>
-                                                                
+
                                                             </div>
 
                                                         </div>
@@ -451,7 +459,7 @@
                                                                 </div>
                                                                 <div class="row">
                                                                     <br />
-                                                                    <button id="btnSub4" type="button" class=" btn btn-sm btn-primary">Click Me</button>
+                                                                    <button id="btnSub4" type="button" class=" btn btn-sm btn-primary">Submit</button>
                                                                     <button id="btnClear4" type="button" class="btn btn-sm btn-warning">Clear</button>
                                                                 </div>
                                                                 <div class="row">
@@ -525,7 +533,7 @@
 
 
                         </div>
-                    
+
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="myModal2" data-toggle="modal" data-target="#myModal2" class="porfolio-item">
@@ -544,7 +552,7 @@
                                                 <p><b>Here I have another completed project known as my Blog Post where I speak about myself but also about other projects and lessons I've learned in the process of becoming a Software Developer. You're more than welcome to check it out and leave a comment (must register to leave a comment).</b></p>
                                             </div>
                                             <div class="modal-footer">
-                                                <a href="https://zamblog.azurewebsites.net/" target="_blank" class= "btn btn-primary">Go to Blog Post..</a>
+                                                <a href="https://zamblog.azurewebsites.net/" target="_blank" class="btn btn-primary">Go to Blog Post..</a>
                                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                             </div>
                                         </div>
@@ -584,9 +592,9 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="myModal4" data-toggle="modal" data-target="#myModal4" class="portfolio-item">
-                                    <img class="img-portfolio img-responsive img-thumbnail" src="~/img/WebApi New-Portfolio.jpg" />   
+                                    <img class="img-portfolio img-responsive img-thumbnail" src="~/img/WebApi New-Portfolio.jpg" />
                                 </a>
-                                 <div id="myModal4" class="modal fade" role="dialog">
+                                <div id="myModal4" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
 
                                         <!-- Modal content-->
@@ -596,10 +604,10 @@
                                                 <h2 class="modal-title"><b>Web API!</b></h2>
                                             </div>
                                             <div class="modal-body">
-                                                <p><b>Currently under construction..</b></p>
+                                                <p><b>Project is up and running, please check it out!</b></p>
                                             </div>
                                             <div class="modal-footer">
-                                                @*<a href="https://zamblog.azurewebsites.net/" target="_blank" class= "btn btn-primary">Go to Blog Post..</a>*@
+                                                <a href="https://gwebapi.azurewebsites.net/" target="_blank" class="btn btn-primary">Go to Web API..</a>
                                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                             </div>
                                         </div>
@@ -608,8 +616,35 @@
                                 </div>
                             </div>
                         </div>
-                   </div>
-               
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="myModal5" data-toggle="modal" data-target="#myModal5" class="portfolio-item">
+                                    <img class="img-portfolio img-responsive img-rounded" src="~/img/financial planner pic.jpg" />
+                                </a>
+                                <div id="myModal5" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h2 class="modal-title"><b>Financial Budget Planner!</b></h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><b>Yet another project under my belt: 'The Budgeter'. Do you need help to keep track of your spending habits? Check out my Financial Budget Planner.</b></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="https://finportalz.azurewebsites.net/" target="_blank" class="btn btn-primary">Go to Budgeter App..</a>
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
@@ -620,25 +655,25 @@
     </section>
     <!-- Call to Action -->
     @*<aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>The buttons below are impossible to resist.</h3>
+                        <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                        <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </aside>*@
+        </aside>*@
     <!-- Map -->
     @*<section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-        </iframe>
-    </section>*@
+            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <br />
+            <small>
+                <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+            </small>
+            </iframe>
+        </section>*@
     <!-- Footer -->
     <footer>
         <section id="contact">
@@ -664,7 +699,7 @@
                                 <a href="https://github.com/Greg712144" target="_blank"><i class="fa fa-github-square fa-fw fa-3x"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/gregorio-zambrana-5873a8152/" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-3x" ></i></a>
+                                <a href="https://www.linkedin.com/in/gregorio-zambrana-5873a8152/" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
                             </li>
 
                         </ul>
@@ -686,7 +721,7 @@
     <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
     <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
 
-   
+
 
     @* Aggregated jQuery exercises *@
     <script>
@@ -718,12 +753,25 @@
             var min = Math.min(n1, n2, n3, n4, n5)
 
             //Output the results to user
-            $("#sum").text("The sum of your numbers: " + sum)
-            $("#product").text("The product of your numbers: " + product)
-            $("#average").text("The average of your numbers: " + average)
-            $("#largest").text("The largest of your numbers: " + max)
-            $("#smallest").text("The smallest of your numbers: " + min)
+            if (n1 || n2 || n3 || n4 || n5 < 0) {
+                $("#error").text("Please enter positive numbers.")
+            }
+            if (n1 || n2 || n3 || n4 || n5 == 0) {
+                $("#error").text("Please enter a number greater than zero.")
 
+            }
+            else {
+
+                $("#sum").text("The sum of your numbers: " + sum)
+                $("#product").text("The product of your numbers: " + product)
+                $("#average").text("The average of your numbers: " + average)
+                $("#largest").text("The largest of your numbers: " + max)
+                $("#smallest").text("The smallest of your numbers: " + min)
+
+            }
+
+
+           
         });
 
         //Palindrome
@@ -733,7 +781,7 @@
         $("#btnSub2").click(function () {
             $("#resultPali").show();
 
-            var p = $("#p1").val(); 
+            var p = $("#p1").val();
 
             function palindrome(str) {
                 var re = /[\W_]/g;
@@ -764,52 +812,60 @@
             var num2 = parseInt($("#n7").val());
             var myOutput = "";
 
+
             //Write Loop from 1 to 100
 
             for (var i = 1; i <= 100; i++) {
                 //Record Modulus
                 var Fizz = i % num1;
                 var Buzz = i % num2;
-                
+
 
 
                 //Check Fizzy
+ 
                 if (((i % num1) == 0) && ((i % num2) == 0)) {
                     myOutput += "<span class='FizzBuzz'>FizzBuzz. </span>";
 
                 }
-
                 else if (Fizz == 0) {
                     myOutput += "<span class='Fizz'>Fizz. </span>";
 
                 }
-
                 else if (Buzz == 0) {
                     myOutput += "<span class='Buzz'>Buzz. </span>";
 
                 }
-
                 else {
                     var num = i.toString();
                     myOutput += num + ". ";
-                     }
+                }
 
-                //console.log(myOutput)
-                    
-                
-               
+
             }
-           
+
 
             myOutput = myOutput.substring(0, myOutput.length, -2);
 
-            $("#fizB").html(myOutput);
-            
+            if (num1 || num2 < 0) {
+                $("#fizB").html("Please enter numbers greater than 0");
+
+            }
+            if (num1 || num2 > 100) {
+                $("#fizB").html("Please enter numbers between 1 and 100");
+
+            }
+            else {
+                $("#fizB").html(myOutput);
+
+            }
+
+
 
         });
 
         //Factorial
-       
+
         $("#resultFact").hide();
 
         $("#btnSub4").click(function () {
@@ -820,48 +876,57 @@
 
             var fain = +$("#n8").val();
 
-            
 
             //Calculate Factorial
-            for (i = (fain-1); i > 1; i--) {
+            for (i = (fain - 1); i > 1; i--) {
                 fain = fain * i;
 
 
             };
 
             //Output Results
+            if ($("#n8").val() <= 0) {
+                $("#fain").text("Please enter a number greater than zero")
 
+            }
+            if (fain > 170) {
+                $("#fain").text("Please enter a number lower than 170.")
 
-            $("#fain").text("The Factorial of " + $("#n8").val() + " is " + fain)
+            }
+            else {
+                $("#fain").text("The Factorial of " + $("#n8").val() + " is " + fain)
+
+            }
+
 
         });
 
 
 
         //Function Handles
-        
 
-        $("#btnClear1, #btnClear2, #btnClear3, #btnClear4").click(function ()  {
-           
+
+        $("#btnClear1, #btnClear2, #btnClear3, #btnClear4").click(function () {
+
             clearData();
-            
+
 
         });
 
-       
+
 
         $('a[data-toggle="pill"]').click(function () {
 
             clearData();
-            
+
         });
-       
-        
+
+
 
         //Functions
 
         function clearData() {
-           
+
             $("#resultHdr").hide()
             $("#resultFact").hide()
             $("#resultFizz").hide()
@@ -871,15 +936,15 @@
             $("#McodeFb").hide();
             $("#McodeF").hide();
             $("#n1, #n2, #n3, #n4, #n5, #n6, #n7, #n8, #p1").val("")
-            $("#sum, #product, #average, #largest, #smallest, #fain, #fizB, #palD").html("")
-           
+            $("#sum, #product, #average, #largest, #smallest, #fain, #fizB, #palD, #error").html("")
 
-        };  
+
+        };
 
     </script>
-        
-           
-    
+
+
+
 
 
     <!-- Custom Theme JavaScript -->

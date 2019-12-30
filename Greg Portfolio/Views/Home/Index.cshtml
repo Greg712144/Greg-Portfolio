@@ -43,7 +43,7 @@
 
 
         .ImageBorder {
-            border-width: 1px;
+            border-width: 10px;
             border-color: Black;
         }
         
@@ -152,9 +152,9 @@
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="portfolio-item">
+                            <div class="portfolio-item" style="width:auto;height:auto" >
                                 <a href="myModal" data-toggle="modal" data-target="#myModal" class="porfolio-item">
-                                    <img class="img-portfolio img-responsive img-rounded" src="~/img/Javascript New- Portfolio.jpg" />
+                                    <img class="img-portfolio img-responsive img-rounded ImageBorder " src="~/img/Javascript New- Portfolio.jpg" />
                                 </a>
                                 <!-- Modal -->
 
@@ -537,7 +537,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="myModal2" data-toggle="modal" data-target="#myModal2" class="porfolio-item">
-                                    <img class="img-portfolio img-responsive img-rounded" src="~/img/BlogPost New-Portfolio.png" />
+                                    <img class="img-portfolio img-responsive img-rounded ImageBorder" src="~/img/BlogPost New-Portfolio.png" />
                                 </a>
                                 <div id="myModal2" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
@@ -565,7 +565,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="myModal3" data-toggle="modal" data-target="#myModal3" class="portfolio-item">
-                                    <img class="img-portfolio img-responsive img-rounded" src="~/img/BugTracker New-Portfolio.jpg" />
+                                    <img class="img-portfolio img-responsive img-rounded ImageBorder" src="~/img/BugTracker New-Portfolio.jpg" />
                                 </a>
                                 <div id="myModal3" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
@@ -592,7 +592,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="myModal4" data-toggle="modal" data-target="#myModal4" class="portfolio-item">
-                                    <img class="img-portfolio img-responsive img-thumbnail" src="~/img/WebApi New-Portfolio.jpg" />
+                                    <img class="img-portfolio img-responsive img-thumbnail ImageBorder" src="~/img/WebApi New-Portfolio.jpg" />
                                 </a>
                                 <div id="myModal4" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
@@ -753,23 +753,23 @@
             var min = Math.min(n1, n2, n3, n4, n5)
 
             //Output the results to user
-            if (n1 || n2 || n3 || n4 || n5 < 0) {
-                $("#error").text("Please enter positive numbers.")
-            }
-            if (n1 || n2 || n3 || n4 || n5 == 0) {
-                $("#error").text("Please enter a number greater than zero.")
+            //if (n1 || n2 || n3 || n4 || n5 < 0) {
+            //    $("#error").text("Please enter positive numbers.")
+            //}
+            //else if (n1 || n2 || n3 || n4 || n5 == 0) {
+            //    $("#error").text("Please enter a number greater than zero.")
 
-            }
-            else {
+            //}
+            //else {
+
+
+            //}
 
                 $("#sum").text("The sum of your numbers: " + sum)
                 $("#product").text("The product of your numbers: " + product)
                 $("#average").text("The average of your numbers: " + average)
                 $("#largest").text("The largest of your numbers: " + max)
                 $("#smallest").text("The smallest of your numbers: " + min)
-
-            }
-
 
            
         });
